@@ -3,136 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhavya Sengar</title>
+    <title>Bhavya Sengar | CSE Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">My <span>Portfolio</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">BHAVYA<span>.</span></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Hi, I'm <span>BHAVYA SENGAR</span></h1>
-            <h2>B.Tech CSE • 1st Year • ABES Engineering College </h2>
-            <p>
-                Passionate about programming, web development and learning new technologies.
-                This is my simple portfolio made with HTML and CSS.
-            </p>
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
-        </div>
-        <div class="hero-card">
-            <div class="avatar-circle">BS</div>
-            <p class="hero-tagline">Future Software Engineer</p>
-        </div>
-    </section>
-
-
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-content about-content">
-            <p>
-                I’m a passionate Computer Science and Engineering (CSE) 
-                student pursuing my B.Tech, driven by curiosity and a desire 
-                to explore how technology shapes the future. My interests 
-                include software development, web technologies, data structures, 
-                and artificial intelligence.
-            </p>
-            <p>
-                I enjoy learning new programming languages, working on real-world 
-                projects, and collaborating with like-minded individuals to solve 
-                problems creatively. I’m continuously building my technical and 
-                soft skills to prepare for a dynamic career in the IT industry.
-            </p>
-            <p>
-                🌱 Currently exploring: Web development | Data Structure and 
-                Algorithms in C++ | Python programming 
-                <br>
-                💡 Goal: To grow as a skilled software engineer and contribute 
-                to impactful tech innovations.
-            </p>
-        </div>
-    </section>
-
-
-    <section id="skills" class="section section-alt">
-        <h2 class="section-title">Skills</h2>
-        <div class="section-content skills-grid">
-            <div class="skill-card">
-                <h3>Programming</h3>
-                <p>C++, Python</p>
-            </div>
-            <div class="skill-card">
-                <h3>Web Development</h3>
-                <p>HTML, CSS</p>
-            </div>
-            <div class="skill-card">
-                <h3>Tools</h3>
-                <p>VS Code, Git & Github</p>
-            </div>
-            <div class="skill-card">
-                <h3>Other</h3>
-                <p>Problem solving, Teamwork, Communication</p>
+    <section id="about" class="hero">
+        <div class="hero-content">
+            <img src="your-photo.jpg" alt="Bhavya Sengar" class="profile-pic">
+            <h1>Hi, I'm <span>Bhavya Sengar</span></h1>
+            <h3>B.Tech CSE Student @ ABES Engineering College</h3>
+            <p class="bio">1st Year Student | Aspiring Software Developer | Tech Enthusiast</p>
+            <div class="social-hero">
+                <a href="https://github.com/BhavyaSengar"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bhavya-sengar"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </section>
 
+    <section id="skills">
+        <h2 class="section-title">Technical Toolkit</h2>
+        <div class="skills-container">
+            <div class="skill-box"><i class="fab fa-python"></i><p>Python</p></div>
+            <div class="skill-box"><i class="fas fa-code"></i><p>C++</p></div>
+            <div class="skill-box"><i class="fab fa-html5"></i><p>HTML5</p></div>
+            <div class="skill-box"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
+            <div class="skill-box"><i class="fab fa-js"></i><p>JavaScript</p></div>
+            <div class="skill-box"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+            <div class="skill-box"><i class="fab fa-react"></i><p>React</p></div>
+        </div>
+    </section>
 
-    <section id="projects" class="section">
+    <section id="github">
+        <h2 class="section-title">Contributions</h2>
+        <div class="github-card">
+            <img src="https://ghchart.rshah.org/38bdf8/BhavyaSengar" alt="Bhavya's GitHub Chart" />
+            <p>Real-time GitHub Collaboration Grid</p>
+        </div>
+    </section>
+
+    <section id="projects">
         <h2 class="section-title">Projects</h2>
-        <div class="section-content projects-grid">
+        <div class="projects-grid">
             <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>
-                    A simple personal portfolio created using basic HTML and CSS to showcase my skills and projects.
-                </p>
+                <div class="project-content">
+                    <div class="status-tag">In Progress</div>
+                    <h3>Personal Portfolio</h3>
+                    <p>A high-performance portfolio website with CSS animations and responsive grid layouts.</p>
+                    <div class="project-tags"><span>HTML</span> <span>CSS</span> <span>JS</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/BhavyaSengar" class="view-btn">Code <i class="fab fa-github"></i></a>
+                        <a href="#" class="view-btn demo-btn">Live <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Calculator (C++)</h3>
-                <p>
-                    Console based calculator that performs basic arithmetic operations using C++.
-                </p>
-            </div>
-            <div class="project-card">
-                <h3>Student Marks Manager</h3>
-                <p>
-                    Small program to store and display student marks using arrays and loops.
-                </p>
+                <div class="project-content">
+                    <div class="status-tag">In Progress</div>
+                    <h3>Logic & Algorithms</h3>
+                    <p>Collection of competitive programming solutions and data structure implementations in C++.</p>
+                    <div class="project-tags"><span>C++</span> <span>OOP</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/BhavyaSengar" class="view-btn">View Repo <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <section id="contact" class="section section-alt">
-        <h2 class="section-title">Contact</h2>
-        <div class="section-content contact-content">
-            <p>Email: <a href="mailto:bhavyasengar@gmial.com">bhavyahts@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/bhavya-sengar/" target="_blank">linkedin.com/in/bhavya-sengar</a></p>
-            <p>GitHub: <a href="https://github.com/BhavyaSengar" target="_blank">github.com/BhavyaSengar</a></p>
+    <section id="certificates">
+        <h2 class="section-title">Certifications</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="HackerRank.png" alt="Certificate 5">
+                <img src="Esummit-iitr.jpeg" alt="Ceryificate 4">
+                <img src="codewizard.jpeg" alt="Certificate 3">
+                <img src="cyberquest.jpeg" alt="Certificate 2">
+                <img src="squidgame.jpeg" alt="Certificate 1">
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
         </div>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea rows="4" placeholder="Your Message"></textarea>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 Bhavya Sengar</p>
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/BhavyaSengar"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bhavya-sengar"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/mbhavyasengar"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/mbhavyasengar"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2026 Bhavya Sengar. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
