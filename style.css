@@ -148,10 +148,10 @@ footer {
     color: var(--accent-color);
 }
 
-.footer-socials a .fa-github:hover { color: #ffffff; }
-.footer-socials a .fa-linkedin:hover { color: #0077b5; }
-.footer-socials a .fa-instagram:hover { color: #e1306c; }
-.footer-socials a .fa-x-twitter:hover { color: #1da1f2; }
+.footer-socials a .fa-github:hover { color: #44bbeb; }
+.footer-socials a .fa-linkedin:hover { color: #44bbeb; }
+.footer-socials a .fa-instagram:hover { color: #44bbeb; }
+.footer-socials a .fa-x-twitter:hover { color: #44bbeb; }
 
 footer p {
     font-size: 0.9rem;
