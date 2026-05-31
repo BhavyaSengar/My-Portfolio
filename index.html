@@ -1,142 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhavya Sengar | CSE Portfolio</title>
+    <title>Bhavya Sengar | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Back To Top -->
+    <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating Background -->
+    <div class="bg-blob blob1"></div>
+    <div class="bg-blob blob2"></div>
+
+    <!-- Navbar -->
     <nav>
-        <div class="logo">BHAVYA<span>.</span></div>
-        <ul>
+
+        <div class="logo">
+            Bhavya <span>Sengar</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="#home">Home</a></li>
+
             <li><a href="#about">About</a></li>
+
             <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#services">Services</a></li>
+
             <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#certificates">Certificates</a></li>
+
             <li><a href="#contact">Contact</a></li>
+
         </ul>
+
+        <div class="nav-actions">
+
+            <button id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
     </nav>
 
-    <section id="about" class="hero">
+    <!-- Hero -->
+
+    <section id="home" class="hero">
+
         <div class="hero-content">
-            <img src="Profilepic.png" alt="Bhavya Sengar" class="profile-pic">
-            <h1>Hi, I'm <span>Bhavya Sengar</span></h1>
-            <h3>B.Tech CSE Student @ ABES Engineering College</h3>
-            <br>
-            <p class="bio">I’m a passionate Computer Science and Engineering (CSE) student pursuing my B.Tech, 
-                driven by curiosity and a desire to explore how technology shapes the future. My interests include 
-                software development, web technologies, data structures, and artificial intelligence.
+
+            <img src="Profilepic.png"
+                alt="Bhavya Sengar"
+                class="profile-pic">
+
+            <h1>
+                Bhavya
+                <span>Sengar</span>
+            </h1>
+
+            <h3 id="typing"></h3>
+
+            <p class="hero-description">
+
+                Computer Science Engineering Student,
+                Web Developer and App Developer passionate
+                about building modern digital experiences.
+
             </p>
-            <div class="social-hero">
-                <a href="https://github.com/BhavyaSengar"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/bhavya-sengar"><i class="fab fa-linkedin"></i></a>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="primary-btn">
+                    Download Resume
+                </a>
+
+                <a href="#contact"
+                    class="secondary-btn">
+                    Hire Me
+                </a>
+
             </div>
+
+            <div class="hero-socials">
+
+                <a href="https://github.com/BhavyaSengar">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/bhavya-sengar">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://x.com/mbhavyasengar">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="https://www.instagram.com/mbhavyasengar">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+
         </div>
+
     </section>
+
+    <!-- Stats -->
+
+    <section id="stats">
+
+        <div class="stat-card">
+
+            <h2 class="counter"
+                data-target="20">
+                0
+            </h2>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 class="counter"
+                data-target="15">
+                0
+            </h2>
+
+            <p>Certificates</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 class="counter"
+                data-target="500">
+                0
+            </h2>
+
+            <p>DSA Problems</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2 class="counter"
+                data-target="3">
+                0
+            </h2>
+
+            <p>Years Learning</p>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <p>
+
+                    I'm Bhavya Sengar,
+                    a passionate B.Tech CSE student at
+                    ABES Engineering College.
+
+                </p>
+
+                <p>
+
+                    I enjoy creating modern websites,
+                    developing applications,
+                    learning new technologies and solving
+                    programming challenges.
+
+                </p>
+
+                <p>
+
+                    My interests include Web Development,
+                    Software Engineering,
+                    Artificial Intelligence,
+                    UI/UX Design and Problem Solving.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
 
     <section id="skills">
-        <h2 class="section-title">Technical Toolkit</h2>
+
+        <h2 class="section-title">
+            Technical Toolkit
+        </h2>
+
         <div class="skills-container">
-            <div class="skill-box"><i class="fab fa-python"></i><p>Python</p></div>
-            <div class="skill-box"><i class="fas fa-code"></i><p>C++</p></div>
-            <div class="skill-box"><i class="fab fa-html5"></i><p>HTML5</p></div>
-            <div class="skill-box"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
-            <div class="skill-box"><i class="fab fa-js"></i><p>JavaScript</p></div>
-            <div class="skill-box"><i class="fab fa-node-js"></i><p>Node.js</p></div>
-            <div class="skill-box"><i class="fab fa-react"></i><p>React</p></div>
+
+            <div class="skill-box">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fas fa-code"></i>
+                <p>C++</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fab fa-node-js"></i>
+                <p>Node JS</p>
+            </div>
+
+            <div class="skill-box">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+
         </div>
+
     </section>
 
-    <section id="github">
-        <h2 class="section-title">GitHub Activity</h2>
-        <div class="github-container">
-            <img src="https://ghchart.rshah.org/38bdf8/BhavyaSengar" 
-                alt="Bhavya Sengar's Blue GitHub Chart" 
-                class="github-chart" />
-        
-            <div class="github-stats">
-                <span><i class="fas fa-layer-group"></i> Real-time Contributions</span>
-                <a href="https://github.com/BhavyaSengar" target="_blank">View on GitHub</a>
+    <!-- Services -->
+
+    <section id="services">
+
+        <h2 class="section-title">
+            Services
+        </h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <i class="fas fa-laptop-code"></i>
+
+                <h3>
+                    Website Development
+                </h3>
+
+                <p>
+                    Responsive modern websites
+                    for businesses and personal brands.
+                </p>
+
             </div>
+
+            <div class="service-card">
+
+                <i class="fas fa-mobile-screen"></i>
+
+                <h3>
+                    App Development
+                </h3>
+
+                <p>
+                    Android application development
+                    with modern UI.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fas fa-palette"></i>
+
+                <h3>
+                    UI / UX Design
+                </h3>
+
+                <p>
+                    Clean, attractive and
+                    user friendly designs.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fas fa-globe"></i>
+
+                <h3>
+                    Business Websites
+                </h3>
+
+                <p>
+                    Professional websites
+                    for startups and companies.
+                </p>
+
+            </div>
+
         </div>
+
     </section>
+
+    <!-- Projects -->
 
     <section id="projects">
-        <h2 class="section-title">Projects</h2>
+
+        <h2 class="section-title">
+            Featured Projects
+        </h2>
+
+        <input
+            type="text"
+            id="projectSearch"
+            placeholder="Search Projects...">
+
         <div class="projects-grid">
+
             <div class="project-card">
-                <div class="project-content">
-                    <div class="status-tag">In Progress</div>
-                    <h3>Personal Portfolio</h3>
-                    <p>A high-performance portfolio website with CSS animations and responsive grid layouts.</p>
-                    <div class="project-tags"><span>HTML</span> <span>CSS</span> <span>JS</span></div>
-                    <div class="project-links">
-                        <a href="https://github.com/BhavyaSengar" class="view-btn">Code <i class="fab fa-github"></i></a>
-                        <a href="#" class="view-btn demo-btn">Live <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+
+                <div class="project-top">
+                    <i class="fas fa-globe"></i>
                 </div>
+
+                <h3>
+                    Personal Portfolio
+                </h3>
+
+                <p>
+                    Modern portfolio website with
+                    animations and responsive design.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#">
+                        Code
+                    </a>
+
+                    <a href="#">
+                        Live Demo
+                    </a>
+
+                </div>
+
             </div>
+
             <div class="project-card">
-                <div class="project-content">
-                    <div class="status-tag">In Progress</div>
-                    <h3>Logic & Algorithms</h3>
-                    <p>Collection of competitive programming solutions and data structure implementations in C++.</p>
-                    <div class="project-tags"><span>C++</span> <span>OOP</span></div>
-                    <div class="project-links">
-                        <a href="https://github.com/BhavyaSengar" class="view-btn">View Repo <i class="fab fa-github"></i></a>
-                    </div>
+
+                <div class="project-top">
+                    <i class="fas fa-cart-shopping"></i>
                 </div>
+
+                <h3>
+                    E-Commerce Website
+                </h3>
+
+                <p>
+                    Responsive shopping platform
+                    with product filtering.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>JS</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#">
+                        Code
+                    </a>
+
+                    <a href="#">
+                        Live Demo
+                    </a>
+
+                </div>
+
             </div>
+
         </div>
+
     </section>
+
+        <!-- Coding Profiles -->
+
+    <section id="profiles">
+
+        <h2 class="section-title">
+            Coding Profiles
+        </h2>
+
+        <div class="profiles-grid">
+
+            <a href="#"
+                class="profile-card">
+
+                <i class="fas fa-code"></i>
+
+                <h3>
+                    LeetCode
+                </h3>
+
+                <p>
+                    Data Structures & Algorithms
+                </p>
+
+            </a>
+
+            <a href="#"
+                class="profile-card">
+
+                <i class="fas fa-laptop-code"></i>
+
+                <h3>
+                    CodeChef
+                </h3>
+
+                <p>
+                    Competitive Programming
+                </p>
+
+            </a>
+
+            <a href="#"
+                class="profile-card">
+
+                <i class="fas fa-award"></i>
+
+                <h3>
+                    HackerRank
+                </h3>
+
+                <p>
+                    Certifications & Practice
+                </p>
+
+            </a>
+
+            <a href="#"
+                class="profile-card">
+
+                <i class="fab fa-github"></i>
+
+                <h3>
+                    GitHub
+                </h3>
+
+                <p>
+                    Open Source Projects
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Achievements -->
+
+    <section id="achievements">
+
+        <h2 class="section-title">
+            Achievements
+        </h2>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+
+                <span>🏆</span>
+
+                <h3>
+                    Technical Events
+                </h3>
+
+                <p>
+                    Active participant in coding and
+                    technical competitions.
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <span>🎯</span>
+
+                <h3>
+                    Certifications
+                </h3>
+
+                <p>
+                    Multiple certifications in
+                    programming and technology.
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <span>💻</span>
+
+                <h3>
+                    Development
+                </h3>
+
+                <p>
+                    Continuous learning in Web and
+                    Software Development.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GitHub Section -->
+
+    <section id="github">
+
+        <h2 class="section-title">
+            GitHub Activity
+        </h2>
+
+        <div class="github-container">
+
+            <img
+                src="https://ghchart.rshah.org/2563eb/BhavyaSengar"
+                alt="GitHub Chart"
+                class="github-chart">
+
+            <div class="github-stats">
+
+                <span>
+                    <i class="fas fa-layer-group"></i>
+                    Real-time Contributions
+                </span>
+
+                <a href="https://github.com/BhavyaSengar">
+                    View GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Certificates -->
 
     <section id="certificates">
-        <h2 class="section-title">Certifications</h2>
-        <div class="carousel">
-            <div class="carousel-track">
-                <img src="HackerRank.png" alt="Certificate 5">
-                <img src="Esummit-iitr.jpeg" alt="Ceryificate 4">
-                <img src="codewizard.jpeg" alt="Certificate 3">
-                <img src="cyberquest.jpeg" alt="Certificate 2">
-                <img src="squidgame.jpeg" alt="Certificate 1">
-            </div>
-            <button class="carousel-btn prev">❮</button>
-            <button class="carousel-btn next">❯</button>
+
+        <h2 class="section-title">
+            Certificates
+        </h2>
+
+        <div class="certificate-grid">
+
+            <img src="HackerRank.png"
+                alt="Certificate">
+
+            <img src="Esummit-iitr.jpeg"
+                alt="Certificate">
+
+            <img src="codewizard.jpeg"
+                alt="Certificate">
+
+            <img src="cyberquest.jpeg"
+                alt="Certificate">
+
+            <img src="squidgame.jpeg"
+                alt="Certificate">
+
         </div>
+
     </section>
+
+    <!-- Contact -->
 
     <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
         <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea
+                rows="6"
+                placeholder="Your Message"
+                required>
+            </textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
         </form>
+
     </section>
 
+    <!-- Footer -->
+
     <footer>
-    <div class="footer-socials">
-        <a href="https://github.com/BhavyaSengar" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/bhavya-sengar" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://x.com/mbhavyasengar" target="_blank" aria-label="Twitter">
-            <i class="fab fa-x-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/mbhavyasengar" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-    </div>
-    <p>Designed & Developed by Bhavya Sengar &copy; 2026</p>
+
+        <div class="footer-socials">
+
+            <a href="https://github.com/BhavyaSengar">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/bhavya-sengar">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+            <a href="https://www.instagram.com/mbhavyasengar">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+            <a href="https://x.com/mbhavyasengar">
+
+                <i class="fab fa-x-twitter"></i>
+
+            </a>
+
+        </div>
+
+        <p>
+            Designed & Developed by
+            Bhavya Sengar © 2026
+        </p>
+
     </footer>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
